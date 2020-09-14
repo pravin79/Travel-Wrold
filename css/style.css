@@ -16,7 +16,7 @@ section{
 }
 
 .header{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000000;
@@ -25,6 +25,9 @@ section{
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    background: rgba(52, 54, 54, 0.596);
+    /* box-shadow: 0px 2px 5px rgb(255, 255, 255) ; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
 }
 
 .header .logo{
@@ -45,6 +48,10 @@ section{
     font-size: 20px;
 }
 
+.header .home{
+    color: rgb(229, 255, 0);
+}
+
 .header li{
     margin: 5px 15px;
 }
@@ -54,7 +61,6 @@ section{
     font-size: 20px;
     color: #fff;
 }
-
 .banner{
     position: relative;
     width: 100%;
@@ -62,6 +68,11 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.header a:hover{
+    color: rgb(229, 255, 0);
+    /* border: 1px solid rgb(229, 255, 0); */
 }
 
 .banner:before{
@@ -273,7 +284,6 @@ section{
     position: relative;
     min-width: 380px;
     height: 480px;
-   
     transition: 0.5s;
     margin: 10px;
     border-radius: 10px;
@@ -456,5 +466,286 @@ section{
 .copyrights a{
     color: #fff;
     text-decoration: none;
+
+}
+
+@media (max-width: 1200px)
+{
+    .banner{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        z-index: 1;
+        background: linear-gradient(to top,#111,transparent);
+    }
+    
+    .banner .content{
+        position: relative;
+        max-width:  700px;
+        text-align: center;
+        z-index: 1;
+    }
+    
+    .banner .content h2{
+        color: #fff;
+        font-size: 3.2em;
+        
+    }
+    .banner .content p{
+        color: #fff;
+        font-size: 1.2em;
+    }
+    
+    .btn{
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 30px;
+        background: #fff;
+        color: #111;
+        text-decoration: none;
+    }
+    
+    .fitbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }  
+
+    .about{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .contentbx{
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .about .imgbx{
+        width: 100%;
+        
+        margin-top: 20px;
+    }
+
+    .about .imgbx img{
+        height: 70%;
+    }
+
+    .banner2{
+        width: 100%;
+    }
+
+    .banner2 .imgb2{
+        display: none;
+    }
+
+    .content-most{
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-most .content-box{
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-most .tbl{
+        text-align: center;
+        right: 0;
+        margin-left: 50px;
+    }
+
+    .content-most .imgbox{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-most .imgbox{
+        margin: 0px 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .content-most .countbx{
+        margin-left: 10px;
+        margin-right: 10px;   
+    }
+
+    .content-most .countbx img{
+        width: 100%;
+        position: relative;
+    }
+
+
+
+
+}
+
+
+@media (min-width: 361px) and  (max-width: 500px) 
+{
+    section{
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .banner{
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .banner .content{
+        position: absolute;
+        display: inline;
+        margin: 0 auto;
+        max-width:  100%;
+        text-align: center;   
+    }
+    
+    .banner .content h2{
+        color: #fff;
+        font-size: 2.2em;
+        
+        
+    }
+    .banner .content p{
+        color: #fff;
+        font-size: 1em;
+    }
+    
+    .btn{
+        position: relative;
+        display: inline-block;
+        margin-top: 30px;
+        padding: 10px 30px;
+        background: #fff;
+        color: #111;
+        text-decoration: none;
+    }
+
+    .banner .bimg{
+        position: relative;
+        visibility: hidden;
+        display: none;
+    }
+    
+    .fitbg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }  
+
+    .about{
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about .contentbx{
+        width: 100%;
+        text-align: center;
+        margin-left: 10px;
+    }
+
+    .about .imgbx{
+        width: 100%;
+        
+        margin-top: 20px;
+    }
+
+    .about .imgbx img{
+        height: 70%;
+    }
+
+    .banner2{
+        width: 100%;
+    }
+
+    .banner2 .imgb2{
+        display: none;
+    }
+
+    .content-most{
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-most .content-box{
+        width: 100%;
+        text-align: center;
+    }
+
+    .content-most .tbl{
+        text-align: center;
+        right: 0;
+        margin-left: 50px;
+    }
+
+    .content-most .imgbox{
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content-most .imgbox{
+        margin: 0px 10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .content-most .countbx{
+        margin-left: 10px;
+        margin-right: 10px;   
+    }
+
+    .content-most .countbx img{
+        width: 100%;
+        position: relative;
+    }
+
+
+
 
 }
