@@ -1,220 +1,132 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    scroll-behavior: smooth;
 }
 
 body{
     background: #111;
 }
 
-section{
-    position: relative;
-    padding: 100px;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000000;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: rgba(52, 54, 54, 0.596);
-    /* box-shadow: 0px 2px 5px rgb(255, 255, 255) ; */
-    border-bottom: 1px solid rgba(255, 255, 255, 0.178);
-}
-
-.header .logo{
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-.header .items{
-    list-style-type: none;
-    display: flex;
-    padding-right: 50px;
-}
-
-.header a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-}
-
-.header .home{
-    color: rgb(229, 255, 0);
-}
-
-.header a:hover{
-    color: rgb(229, 255, 0);
-    /* border: 1px solid rgb(229, 255, 0); */
-}
-
-.header li{
-    margin: 5px 15px;
-}
-
-.header .login{
-    margin: 4px;
-    font-size: 20px;
-    color: #fff;
-}
-
-.banner{
-    position: relative;
-    width: 100%;
+.title-head{
+    padding: 1% 5%;
+    background: url(../assets/imgs/contact.jpg) 100%;
+    background-size: cover;
+    color: #fff; 
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.banner:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
+.fix{
+    position: fixed;
+    padding: 0 10%;
+    background: rgba(0, 0, 0, 0.562);
     left: 0;
-    width: 100%;
-    height: 400px;
     z-index: 1;
-    background: linear-gradient(to top,#111,transparent);
 }
 
-.banner .content{
-    position: relative;
+.navigation{
+    filter: invert();
+   
+}
+
+.navbar-nav{
     text-align: center;
-    z-index: 1;
 }
 
-.banner .content h1{
+.brand-logo{
+    font-size: 2.2rem;
     color: #fff;
-    font-size: 40px;
-    
+    font-weight: 700;
 }
-.banner .content p{
+
+/* .nav-it{
+    float: right;
+} */
+
+.links{
+    font-size: 1.2rem;
     color: #fff;
-    font-size: 1.2em;
-    padding: 0 100px;
-    text-align: left;
+    font-weight: 600;
 }
 
-.banner .content .p1{
-    text-align: right;
+.title-cont{
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: 10%;
 }
 
-.fitbg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.title{
+    font-size: 5rem;
+    margin: 4% 0;
 }
 
-.about{
-    position: relative;
-    width: 100%;
+.conct{
+    padding: 5% 10%;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.banner h2{
-    color: #fff;
-    font-size: 40px;
-    float: left;
+.conct h3{
+    font-size: 3rem;
+    /* text-align: center; */
+    margin: 20px;
 }
 
-.banner .text-input{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
-    margin: 8px 0;
+.conct form{
+   /* margin-left: 50px; */
+   padding: 1%;
 }
 
-.banner .text-input input{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    margin: 10px 0px;
-    padding: 10px 10px;
+.conct input{
+    padding: 10px 30px;
+    margin: 10px;
     border-radius: 5px;
+    padding-right: 100px;
 }
 
-.banner .content .text-email input{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    width: 100%;
-    margin: 0px 0px;
-    padding: 10px 10px;
-    border-radius: 5px;
-}
-
-.banner .content .text-area textarea{
-    border: none;
-    outline: none;
-    background: #fff;
-    color: #111; 
-    width: 100%;
-    height: 100px;
-    margin-top: 30px;
-    padding: 10px 10px;
+.conct textarea{
+    padding: 10px 30px;
+    height: 150px;
+    margin: 10px;
+    padding-right: 50px;
     border-radius: 5px;
     resize: vertical;
 }
 
-.btns{
-    border: none;
-    outline: none;
+.conct .btn{
     background: #fff;
-    color: #111; 
-    margin-top: 20px;
     padding: 10px 30px;
-    border-radius: 5px;
-    float: right;
+    text-align: center;
+    margin-left: 27px;
 }
 
-.bn{
-    min-height: 50vh;
-}
-
-.contact {
-    position: relative;
-    width: 100%;
-    min-height: 30vh;
+.info{
+    padding: 5% 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    color: #fff;
 }
 
-.contact .cont-box{
-    position: relative;
+.info .infos{
+    margin: 10px auto;
+}
+
+.letter{
+    padding: 10% 25%;
     text-align: center;
-    z-index: 1;
-    display: flex;
-    margin-bottom: 30px; 
+    color: #fff;
+    min-width: 60vh;
 }
 
-.contact .cont-box h2{
-    color: #fff;
-    float: left;
-    font-size: 30px;
-}
-
-.contact .cb p{
-    color: #fff;
-    margin: 0px 30px;
+.letter input{
+    display: block;
+    padding: 10px 20px;
+    margin: 2% auto;  
+    border-radius: 7px;
+   
 }
 
 .footer{
@@ -222,6 +134,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background: #333; */
 }
 
 .footer .sci{
@@ -245,6 +158,10 @@ section{
     color: #fff;
 }
 
+.footer .sci li a i:hover{
+    color: #111;
+}
+
 .copyrights{
     color: #fff;
     font-size: 18px;
@@ -256,5 +173,5 @@ section{
 .copyrights a{
     color: #fff;
     text-decoration: none;
-}
 
+}
