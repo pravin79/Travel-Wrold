@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #111;
+}
+
+.title-head{
+    color: #fff; 
+    padding: 0 10%;
+    /* position: fixed; */
+}
+
+.navigation{
+    color: #fff;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.brand-logo{
+    font-size: 2.2rem;
+    color: #fff;
+    filter: invert();
+    font-weight: 700;
+}
+
+.links{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    filter: invert();
+}
+
+.btnst{
+    filter: invert();
+}
+
+.input-info{
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.btns{
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.user{
+    float: right;
+    color: #fff;
+}

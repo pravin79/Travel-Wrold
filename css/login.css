@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #111;
+}
+
+.title-head{
+    color: #fff; 
+    padding: 0 10%;
+    /* position: fixed; */
+}
+
+.navigation{
+    color: #fff;
+}
+
+.navbar-nav{
+    text-align: center;
+}
+
+.brand-logo{
+    font-size: 2.2rem;
+    color: #fff;
+    filter: invert();
+    font-weight: 700;
+}
+
+.links{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 400;
+    filter: invert();
+}
+
+.btns{
+    filter: invert();
+}
+
+.conct{
+    padding: 5% 10%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.conct h3{
+    font-size: 3rem;
+    /* text-align: center; */
+    margin: 20px;
+}
+
+.conct form{
+   /* margin-left: 50px; */
+   padding: 1%;
+}
+
+.conct input{
+    padding: 10px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    padding-right: 100px;
+}
+
+.conct textarea{
+    padding: 10px 30px;
+    height: 150px;
+    margin: 10px;
+    padding-right: 50px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.conct .btn{
+    background: #fff;
+    padding: 10px 30px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 27px;
+}
+
+.user{
+    float: right;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 30px;
+}
