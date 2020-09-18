@@ -58,3 +58,79 @@ body{
     float: right;
     color: #fff;
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(51, 51, 51, 0.123);
+}
+
+.footer .sci{
+    position: relative;
+    display: flex;
+}
+
+.footer .sci li{
+    list-style: none;
+}
+
+.footer .sci li a{
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.footer .sci li a i{
+    padding: 1.4rem 0;
+    max-width: 40px;
+    font-size: 30px;
+    color: #fff;
+    transition: .3s;
+}
+
+.footer .fb:hover{
+    color: #3b5998;
+    transform: translateY(-10px);
+}
+
+.footer .ig:hover{
+    color:  #9b3f72;
+    transform: translateY(-10px);
+}
+
+.footer .tw:hover{
+    color:  #00acee;
+    transform: translateY(-10px);
+}
+
+.footer .yt:hover{
+    color:  #FF0000;
+    transform: translateY(-10px);
+}
+
+.copyrights{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    color: #665;
+    text-align: center;
+}
+
+.copyrights a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 500px)
+{
+
+    .fix{
+        padding: 0 ;
+    }   
+
+    .sticky{
+        padding: 0 1%;
+    }
+}
+
